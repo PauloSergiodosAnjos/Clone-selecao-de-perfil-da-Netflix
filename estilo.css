@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif ;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(114, 113, 113);
+}
+
+
+body {
+    background-image: url(https://img1.goodfon.com/wallpaper/big/c/8e/fon-temyy-darkblue-light.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 30px;
+}
+
+header div h1, h2 {
+    color: red;
+}
+
+img {
+    width: 120px;
+    height: 150px;
+    border-radius: 7px;
+}
+
+.logo-da-netflix {
+    width: 60%;
+    height: 60px;
+    transition: transform .3s;
+}
+
+.Entrar {
+    transition: transform .3s;
+}
+
+.Entrar:hover {
+    transform: scale(1.1);
+}
+
+.logo-da-netflix:hover {
+    transform: scale(1.1);
+}
+
+
+li {
+    transition: transform .3s;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+
+main div {
+    margin: auto;
+}
+
+
+main div ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    width:800px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+main div h1 {
+    text-align: center;
+    color: white;
+}
+
+footer section {
+    color: rgb(114, 113, 113);
+    display: flex;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 3px;
+    height: 50px;
+    width: 180px;
+    padding-top: 10px;
+    margin: auto;
+    margin-top: 50px;
+    transition: transform .3s;
+}
+
+footer section:hover {
+    transform: scale(1.1);
+}
+
+/*animation*/
+
+main div {
+    animation: fromtop backwards .7s;
+}
+
+@keyframes fromtop {
+    from {
+        opacity:0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+footer section {
+    animation: frombottom backwards .7s;
+}
+
+@keyframes frombottom {
+    from {
+        opacity:0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity:1;
+        transform: translateY(0);
+    }
+    
+}
+
+header div {
+    animation: fromside backwards .7s;
+    animation-delay: .2s;
+}
+
+@keyframes fromside {
+    from {
+        opacity:0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+
+
+
